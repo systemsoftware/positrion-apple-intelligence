@@ -1,9 +1,11 @@
 {
   "name": "positron-apple-ai",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "repo":{
     "url":"https://github.com/systemsoftware/positrion-apple-intelligence"
   },
+  "author": "Bryce",
+  "main": "index.js",
   "positron": {
     "command": "apple-ai",
     "className": "AppleAI",
@@ -11,5 +13,12 @@
       "darwin": "mac/ai.swift",
       "win32": "win/ai.cs"
     }
-  }
+  },
+  "keywords": [
+    "positron",
+    "apple",
+    "ai",
+    "artificial intelligence",
+    "apple intelligence"
+  ]
 }

@@ -36,18 +36,15 @@ The command accepts the following arguments (passed in order):
 
 ## Example
 ```js
+
+const promptAppleAI = require("positron-apple-ai")
+
 mainWindow.on("ready", () => {
 
-// ARGS: sendChannel, replyChannel, prompt, instructions, temperature, maxTokens
-const ai = await mainWindow.request("apple-ai", `apple-ai-reply-${mainWindow.id}`, "what is the meaning of life?", "TIMEOUT=10000")
+// ARGS: window, prompt, max timeout
+const content = await promptAppleAI(mainWindow, "prompt here", 10000)
 
-// Note: TIMEOUT= is not sent to the Native layer
-
-if(ai.response) {
-  console.log(ai.response)
-} else {
-  console.error(ai.error || "AI failed")
-}
+console.log(content)
 
 })
 ```
