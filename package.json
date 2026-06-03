@@ -1,6 +1,6 @@
 {
   "name": "positron-apple-ai",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "repo":{
     "url":"https://github.com/systemsoftware/positrion-apple-intelligence"
   },
@@ -8,6 +8,7 @@
   "main": "index.js",
   "positron": {
     "command": "apple-ai",
+    "requiredVersion": "1.0.5",
     "className": "AppleAI",
     "platforms": {
       "darwin": "mac/ai.swift",
